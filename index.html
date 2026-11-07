@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXA IoT - Konsultasi & Rekayasa Proyek IoT Cerdas</title>
+
+    <meta name="description"
+        content="Studio perancangan hardware, firmware, dan konsultasi proyek IoT terdepan di Indonesia. Mengubah ide cerdas Anda menjadi perangkat terhubung berstandar industri.">
+    <meta name="theme-color" content="#050C0A">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Top Cyber Neon Ambient Line -->
+    <div class="cyber-header-glow"></div>
+    <div class="scroll-progress-bar" id="scrollProgress"></div>
+
+    <!-- FLOATING CAPSULE HEADER -->
+    <header class="header-container">
+        <nav class="nav-capsule" aria-label="Navigasi Utama">
+            <!-- Custom Handcrafted SVG Logo -->
+            <a href="#" class="brand-logo" aria-label="NEXA IOT Homepage">
+                <svg class="logo-svg" width="28" height="28" viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="18" stroke="#00FF87" stroke-width="2" stroke-opacity="0.4"
+                        stroke-dasharray="3 3" />
+                    <path d="M20 7L31 13.5V26.5L20 33L9 26.5V13.5L20 7Z" stroke="#00FF87" stroke-width="2.2"
+                        stroke-linejoin="round" />
+                    <circle cx="20" cy="20" r="4.5" fill="#00FF87" class="core-pulse-node" />
+                    <line x1="20" y1="7" x2="20" y2="15.5" stroke="#00FF87" stroke-width="1.8" />
+                    <line x1="31" y1="26.5" x2="23.5" y2="22" stroke="#00FF87" stroke-width="1.8" />
+                    <line x1="9" y1="26.5" x2="16.5" y2="22" stroke="#00FF87" stroke-width="1.8" />
+                </svg>
+                <div class="brand-text-wrap">
+                    <span class="logo-name">NEXA</span>
+                    <span class="logo-badge">IOT</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <div class="nav-links-desktop">
+                <a href="#produk" class="nav-link">Produk IoT</a>
+                <a href="#layanan" class="nav-link">Layanan Konsultasi</a>
+                <a href="#simulator" class="nav-link">Live Telemetri</a>
+                <a href="#portofolio" class="nav-link">Proyek Jadi</a>
+                <a href="#paket" class="nav-link">Biaya & Paket</a>
+            </div>
+
+            <!-- Action Button -->
+            <div class="nav-actions">
+                <a href="https://wa.me/6281234567890?text=Halo%20NEXA%20IOT,%20saya%20ingin%20konsultasi%20mengenai%20proyek%20IoT"
+                    target="_blank" class="cta-pill-neon magnetic-element">
+                    <span>Konsultasi Proyek</span>
+                </a>
+
+                <button id="mobileMenuTrigger" class="mobile-menu-btn" aria-label="Buka Menu">
+                    <span class="bar bar-1"></span>
+                    <span class="bar bar-2"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileDrawer" class="mobile-drawer">
+        <div class="drawer-content">
+            <a href="#produk" class="drawer-link">01. Produk IoT</a>
+            <a href="#layanan" class="drawer-link">02. Layanan Konsultasi</a>
+            <a href="#simulator" class="drawer-link">03. Live Telemetri Lab</a>
+            <a href="#portofolio" class="drawer-link">04. Proyek Showcase</a>
+            <a href="#paket" class="drawer-link">05. Paket Pengerjaan</a>
+            <a href="https://wa.me/6281234567890" target="_blank" class="cta-pill-neon w-full">Chat via WhatsApp</a>
+        </div>
+    </div>
+
+    <main>
+        <!-- HERO SECTION: APPLE PRODUCT LAUNCH STYLE -->
+        <section class="hero-section" id="hero">
+            <!-- Neon Ambient Spheres -->
+            <div class="ambient-cyber-glow glow-1"></div>
+            <div class="ambient-cyber-glow glow-2"></div>
+
+            <div class="content-wrapper hero-inner">
+                <!-- Status Pill -->
+                <div class="status-pill reveal-on-scroll">
+                    <span class="online-indicator"></span>
+                    <span class="pill-text">LAB R&D HARDWARE & CLOUD IOT TERINTEGRASI</span>
+                </div>
+
+                <h1 class="hero-headline reveal-on-scroll">
+                    Hardware Pintar.<br>
+                    <span class="neon-gradient-text">Telemetri Real-Time. Presisi.</span>
+                </h1>
+
+                <p class="hero-subheadline reveal-on-scroll">
+                    Kami merancang dan memproduksi perangkat IoT kustom mulai dari skematik PCB, firmware
+                    mikrokontroler, hingga dashboard analitik awan. Solusi cerdas untuk industri, agrikultur, energi,
+                    dan otomasi modern.
+                </p>
+
+                <!-- CTA Cluster -->
+                <div class="hero-actions reveal-on-scroll">
+                    <a href="#layanan" class="cta-pill-neon large magnetic-element">
+                        <span>Mulai Konsultasi IoT</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="#simulator" class="secondary-btn">
+                        <span>Uji Live Telemetri Lab</span>
+                    </a>
+                </div>
+
+                <!-- HERO INTERACTIVE PRODUCT HARDWARE MOCKUP (NEXA Edge-100) -->
+                <div class="hero-hardware-wrapper reveal-on-scroll">
+                    <div class="hardware-chassis tilt-element" id="heroHardwareCard">
+                        <div class="chassis-glass-reflection"></div>
+
+                        <!-- Top Hardware Bar -->
+                        <div class="chassis-top-bar">
+                            <div class="hardware-id">
+                                <span class="chip-dot"></span>
+                                <span>NEXA EDGE-100™ // MULTI-CHANNEL IOT GATEWAY</span>
+                            </div>
+                            <div class="hardware-leds">
+                                <div class="led-group">
+                                    <span class="led-bulb led-pwr"></span>
+                                    <span class="led-name">PWR</span>
+                                </div>
+                                <div class="led-group">
+                                    <span class="led-bulb led-wifi"></span>
+                                    <span class="led-name">WIFI</span>
+                                </div>
+                                <div class="led-group">
+                                    <span class="led-bulb led-mqtt"></span>
+                                    <span class="led-name">MQTT</span>
+                                </div>
+                                <div class="led-group">
+                                    <span class="led-bulb led-txrx"></span>
+                                    <span class="led-name">TX/RX</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hardware Main Visual Body -->
+                        <div class="chassis-body">
+                            <div class="pcb-circuits-bg"></div>
+
+                            <div class="hardware-centerpiece">
+                                <div class="mcu-processor-unit">
+                                    <div class="mcu-chip-text">
+                                        <span class="mcu-brand">NEXA DUAL-CORE</span>
+                                        <span class="mcu-speed">240 MHz &bull; LoRa + BLE 5.2</span>
+                                    </div>
+                                    <div class="chip-pins-top"></div>
+                                    <div class="chip-pins-bottom"></div>
+                                </div>
+
+                                <!-- Live Circuit Stream Animation -->
+                                <div class="data-stream-bus">
+                                    <div class="data-packet p1"></div>
+                                    <div class="data-packet p2"></div>
+                                    <div class="data-packet p3"></div>
+                                </div>
+
+                                <!-- Telemetry Quick HUD -->
+                                <div class="hardware-hud-card">
+                                    <div class="hud-header">
+                                        <span class="hud-title">REAL-TIME PACKET FLOW</span>
+                                        <span class="hud-status" id="hudPingStatus">0.18ms • AKTIF</span>
+                                    </div>
+                                    <div class="hud-metrics-row">
+                                        <div class="hud-metric">
+                                            <span class="h-val" id="hudPacketsCount">14.820</span>
+                                            <span class="h-lbl">Paket Terkirim</span>
+                                        </div>
+                                        <div class="hud-metric">
+                                            <span class="h-val text-neon" id="hudUptime">99.98%</span>
+                                            <span class="h-lbl">SLA Koneksi</span>
+                                        </div>
+                                        <div class="hud-metric">
+                                            <span class="h-val" id="hudVoltage">3.31 V</span>
+                                            <span class="h-lbl">Tegangan Rel</span>
+                                        </div>
+                                    </div>
+                                    <div class="hud-action-row">
+                                        <button class="hud-btn-test" id="triggerPingBurst">Kirim Sinyal
+                                            Telemetri</button>
+                                        <span class="hud-hint">Klik untuk menguji respons real-time bus</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Chassis Bottom IO Connector Simulation -->
+                        <div class="chassis-footer-io">
+                            <div class="io-terminal"><span class="io-dot"></span> RS485 Modbus</div>
+                            <div class="io-terminal"><span class="io-dot"></span> 4-20mA Sensor</div>
+                            <div class="io-terminal"><span class="io-dot"></span> Digital I/O x8</div>
+                            <div class="io-terminal"><span class="io-dot"></span> 12-24V DC IN</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 2: SHOWCASE PRODUK IOT UNGGULAN -->
+        <section class="section-padding products-section" id="produk">
+            <div class="content-wrapper">
+                <div class="section-header-center reveal-on-scroll">
+                    <span class="section-tag">KATALOG PERANGKAT</span>
+                    <h2 class="section-title">Modul &amp; Hardware IoT Siap Produksi</h2>
+                    <p class="section-subtitle">Perangkat keras berstandar industri dengan proteksi lonjakan tegangan,
+                        enclosure tahan cuaca IP67, dan sertifikasi komponen berkualitas.</p>
+                </div>
+
+                <div class="product-cards-grid">
+
+                    <!-- Product 1 -->
+                    <article class="product-card tilt-element reveal-on-scroll">
+                        <div class="product-badge">INDUSTRIAL GRADE</div>
+                        <div class="product-media grad-cyber-1">
+                            <div class="product-icon-box">
+                                <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#00FF87"
+                                    stroke-width="1.8">
+                                    <rect x="2" y="2" width="20" height="20" rx="3"></rect>
+                                    <circle cx="12" cy="12" r="4"></circle>
+                                    <path d="M12 2v4M12 18v4M2 12h4M18 12h4"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">NEXA Edge Controller X4</h3>
+                            <p class="product-desc">Gateway otomasi pabrik dengan protokol PLC Modbus RTU ke MQTT / REST
+                                API, integrasi SCADA, dan dual-SIM 4G fallback.</p>
+                            <div class="product-specs">
+                                <span class="spec-chip">Dual-Core MCU</span>
+                                <span class="spec-chip">Isolated RS485</span>
+                                <span class="spec-chip">DIN-Rail Ready</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="product-card tilt-element reveal-on-scroll">
+                        <div class="product-badge">SMART AGRICULTURE</div>
+                        <div class="product-media grad-cyber-2">
+                            <div class="product-icon-box">
+                                <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#00E5FF"
+                                    stroke-width="1.8">
+                                    <path d="M12 2a9 9 0 0 1 9 9c0 4.97-4.03 9-9 9s-9-4.03-9-9a9 9 0 0 1 9-9z"></path>
+                                    <path d="M12 6v6l4 2"></path>
+                                    <path d="M7 17l5-5 5 5"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">AgriSense Multi-Node</h3>
+                            <p class="product-desc">Sensor node mikroklimat tanah nirkabel bertenaga surya. Mengukur
+                                NPK, pH, kelembapan tanah, dan radiasi solar jarak hingga 10 km (LoRaWAN).</p>
+                            <div class="product-specs">
+                                <span class="spec-chip">LoRaWAN Long-Range</span>
+                                <span class="spec-chip">Solar + LiFePO4</span>
+                                <span class="spec-chip">IP68 Waterproof</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 3 -->
+                    <article class="product-card tilt-element reveal-on-scroll">
+                        <div class="product-badge">ENERGY MANAGEMENT</div>
+                        <div class="product-media grad-cyber-3">
+                            <div class="product-icon-box">
+                                <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#00FF87"
+                                    stroke-width="1.8">
+                                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">PowerPulse 3-Phase Meter</h3>
+                            <p class="product-desc">Smart meter listrik non-invasif dengan sensor CT clamp untuk
+                                memantau konsumsi kWh, daya reaktif, tegangan, dan prediksi overload mesin.</p>
+                            <div class="product-specs">
+                                <span class="spec-chip">Akurasi Kelas 0.5</span>
+                                <span class="spec-chip">Non-Invasive CT</span>
+                                <span class="spec-chip">Ethernet / Wi-Fi</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 4 -->
+                    <article class="product-card tilt-element reveal-on-scroll">
+                        <div class="product-badge">FLEET & LOGISTICS</div>
+                        <div class="product-media grad-cyber-4">
+                            <div class="product-icon-box">
+                                <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="#00E5FF"
+                                    stroke-width="1.8">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">FleetTrack Pro OBD-II</h3>
+                            <p class="product-desc">Pelacak telematika kendaraan dengan GPS GNSS multi-konstelasi,
+                                pembaca kode error mesin CAN-bus, dan sensor accelerometer deteksi tabrakan.</p>
+                            <div class="product-specs">
+                                <span class="spec-chip">4G LTE-M / NB-IoT</span>
+                                <span class="spec-chip">CAN-Bus Reader</span>
+                                <span class="spec-chip">Internal Backup Bat</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: LAYANAN KONSULTASI & R&D PROYEK -->
+        <section class="section-padding services-section" id="layanan">
+            <div class="content-wrapper">
+                <div class="section-header-center reveal-on-scroll">
+                    <span class="section-tag">KONSULTASI &amp; ENGINEERING</span>
+                    <h2 class="section-title">Solusi Menyeluruh dari Desain Skematik Hingga Produksi Massal</h2>
+                    <p class="section-subtitle">Kami mendampingi perusahaan, startup, dan instansi untuk mewujudkan
+                        produk IoT tangguh tanpa gagal di fase prototipe.</p>
+                </div>
+
+                <div class="services-grid">
+
+                    <div class="service-box reveal-on-scroll">
+                        <div class="service-num">01</div>
+                        <h3 class="service-title">Konsultasi Desain &amp; Arsitektur IoT</h3>
+                        <p class="service-desc">Analisis kelayakan teknis (feasibility study), pemilihan mikrokontroler
+                            (ESP32, STM32, nRF52, Raspberry Pi), estimasi konsumsi daya baterai, dan mitigasi risiko
+                            produksi.</p>
+                        <ul class="service-deliverables">
+                            <li>&bull; Dokumen Spesifikasi Teknis Hardware</li>
+                            <li>&bull; Bill of Materials (BOM) &amp; Perhitungan Biaya Produksi</li>
+                            <li>&bull; Perencanaan Protokol Komunikasi (MQTT, CoAP, BLE, LoRa)</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-box reveal-on-scroll">
+                        <div class="service-num">02</div>
+                        <h3 class="service-title">Perancangan PCB &amp; Prototyping</h3>
+                        <p class="service-desc">Desain skematik presisi menggunakan software standar industri (KiCad /
+                            Altium), perutean jalur sinyal frekuensi tinggi, fabrikasi PCB multi-layer, dan perakitan
+                            komponen SMT.</p>
+                        <ul class="service-deliverables">
+                            <li>&bull; File Gerber, BOM &amp; Pick-and-Place</li>
+                            <li>&bull; Pengujian Proteksi ESD &amp; Noise Isolation</li>
+                            <li>&bull; Desain Enclosure 3D CAD Kustom</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-box reveal-on-scroll">
+                        <div class="service-num">03</div>
+                        <h3 class="service-title">Pengembangan Firmware Tertanam</h3>
+                        <p class="service-desc">Pemrograman mikrokontroler C/C++ modern berbasis FreeRTOS atau
+                            bare-metal. Hemat daya dengan deep sleep mode, enkripsi TLS 1.3, dan pembaruan firmware
+                            nirkabel (OTA Update).</p>
+                        <ul class="service-deliverables">
+                            <li>&bull; Firmware Bebas Crash dengan Watchdog Timer</li>
+                            <li>&bull; Sistem Over-The-Air (OTA) Remote Update</li>
+                            <li>&bull; Dokumentasi API &amp; Source Code Git Pribadi</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-box reveal-on-scroll">
+                        <div class="service-num">04</div>
+                        <h3 class="service-title">Cloud IoT &amp; Dashboard Kustom</h3>
+                        <p class="service-desc">Platform server pemantauan real-time. Kami menghubungkan jutaan paket
+                            data sensor ke basis data time-series (Timescale/InfluxDB) dan dashboard interaktif visual
+                            tinggi.</p>
+                        <ul class="service-deliverables">
+                            <li>&bull; Broker MQTT Berkeamanan Tinggi</li>
+                            <li>&bull; Notifikasi Alarm Otomatis (WhatsApp/Telegram/Email)</li>
+                            <li>&bull; REST API untuk Integrasi Sistem ERP Perusahaan</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: INTERACTIVE LIVE TELEMETRY SIMULATOR -->
+        <section class="section-padding simulator-section" id="simulator">
+            <div class="content-wrapper">
+                <div class="section-header-center reveal-on-scroll">
+                    <span class="section-tag">SIMULATOR INTERAKTIF</span>
+                    <h2 class="section-title">Uji Langsung Telemetri Lab Sensor</h2>
+                    <p class="section-subtitle">Rasakan simulasi aliran data hardware IoT secara real-time langsung dari
+                        peramban Anda. Cobalah menekan tombol kontrol relai di bawah.</p>
+                </div>
+
+                <!-- The Interactive Telemetry Console -->
+                <div class="telemetry-console-card reveal-on-scroll">
+                    <div class="console-top-bar">
+                        <div class="console-device-badge">
+                            <span class="pulse-beacon"></span>
+                            <span>NODE-SIM-09 // ONLINE &bull; PROTOKOL: MQTT v5.0</span>
+                        </div>
+                        <div class="console-timestamp" id="consoleClock">--:--:-- WIB</div>
+                    </div>
+
+                    <div class="console-grid">
+
+                        <!-- Sensor Metric 1: Temp -->
+                        <div class="metric-gauge-box">
+                            <span class="gauge-title">Suhu Lingkungan (DHT22)</span>
+                            <div class="gauge-value-wrap">
+                                <span class="gauge-huge-val text-neon" id="liveTempVal">28.4</span>
+                                <span class="gauge-unit">°C</span>
+                            </div>
+                            <div class="metric-meter-bar">
+                                <div class="meter-fill" id="tempBarFill" style="width: 58%;"></div>
+                            </div>
+                            <span class="gauge-status-sub">Batas Normal: 20°C - 35°C</span>
+                        </div>
+
+                        <!-- Sensor Metric 2: Humidity -->
+                        <div class="metric-gauge-box">
+                            <span class="gauge-title">Kelembapan Relatif</span>
+                            <div class="gauge-value-wrap">
+                                <span class="gauge-huge-val text-cyan" id="liveHumidVal">64</span>
+                                <span class="gauge-unit">% RH</span>
+                            </div>
+                            <div class="metric-meter-bar">
+                                <div class="meter-fill cyan" id="humidBarFill" style="width: 64%;"></div>
+                            </div>
+                            <span class="gauge-status-sub">Optimal Kondensasi Rendah</span>
+                        </div>
+
+                        <!-- Sensor Metric 3: Vibration Waveform Canvas -->
+                        <div class="metric-gauge-box span-2">
+                            <div class="flex-between">
+                                <span class="gauge-title">Sensor Getaran Akselerometer (MPU-6050)</span>
+                                <span class="live-tag">LIVE WAVEFORM</span>
+                            </div>
+                            <canvas id="waveformCanvas" class="waveform-canvas" width="460" height="80"></canvas>
+                            <div class="wave-footer-stats">
+                                <span>RMS: <strong id="rmsVal">0.12 g</strong></span>
+                                <span>Frekuensi: <strong>50.2 Hz</strong></span>
+                                <span class="text-neon">Status: Stabil</span>
+                            </div>
+                        </div>
+
+                        <!-- Control Switch: Relay Actuator -->
+                        <div class="metric-gauge-box span-all relay-control-box">
+                            <div class="relay-info">
+                                <span class="relay-title">Sakelar Relay Beban Listrik (Aktuator 220V)</span>
+                                <p class="relay-desc">Uji kirim instruksi perintah nirkabel (downlink command) ke node
+                                    perangkat keras.</p>
+                            </div>
+                            <div class="relay-action">
+                                <div class="relay-indicator-status">
+                                    <span class="relay-bulb" id="relayBulb"></span>
+                                    <span class="relay-txt" id="relayStatusText">STATUS: OFF (TERBUKA)</span>
+                                </div>
+                                <button class="switch-toggle-btn" id="relayToggleBtn">
+                                    <span class="switch-knob"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: PROYEK JADI & SHOWCASE -->
+        <section class="section-padding showcase-section" id="portofolio">
+            <div class="content-wrapper">
+                <div class="section-header-center reveal-on-scroll">
+                    <span class="section-tag">STUDI KASUS PROYEK</span>
+                    <h2 class="section-title">Kisah Sukses Penerapan Lapangan</h2>
+                    <p class="section-subtitle">Beberapa proyek rekayasa perangkat cerdas yang telah kami rancang dan
+                        implementasikan untuk mitra klien.</p>
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- Case 1 -->
+                    <div class="case-card tilt-element reveal-on-scroll">
+                        <div class="case-header">
+                            <span class="case-cat">SMART AGRICULTURE</span>
+                            <span class="case-year">2025</span>
+                        </div>
+                        <h3 class="case-title">Otomasi Greenhouse Hidroponik Skala 4 Hektar</h3>
+                        <p class="case-desc">Penerapan 32 node mikroklimat LoRaWAN, sistem dosing nutrisi otomatis
+                            terkalibrasi PID, dan pendingin misting cerdas yang berhasil menghemat penggunaan air 42%.
+                        </p>
+                        <div class="case-stat-row">
+                            <div class="stat-cell">
+                                <span class="sc-num">+ 42%</span>
+                                <span class="sc-lbl">Efisiensi Air</span>
+                            </div>
+                            <div class="stat-cell">
+                                <span class="sc-num">0 Downtime</span>
+                                <span class="sc-lbl">365 Hari Berjalan</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case 2 -->
+                    <div class="case-card tilt-element reveal-on-scroll">
+                        <div class="case-header">
+                            <span class="case-cat">COLD-CHAIN HEALTHCARE</span>
+                            <span class="case-year">2025</span>
+                        </div>
+                        <h3 class="case-title">Monitoring Suhu Vaksin &amp; Cold Storage Bersertifikasi</h3>
+                        <p class="case-desc">Sistem pemantau suhu presisi ultra-rendah (-80°C s.d. -20°C) dengan
+                            datalogger offline terenkripsi, alarm panggilan darurat GSM otomatis, dan laporan audit
+                            BPOM.</p>
+                        <div class="case-stat-row">
+                            <div class="stat-cell">
+                                <span class="sc-num">± 0.1°C</span>
+                                <span class="sc-lbl">Akurasi Sensor</span>
+                            </div>
+                            <div class="stat-cell">
+                                <span class="sc-num">100%</span>
+                                <span class="sc-lbl">Kepatuhan Regulasi</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case 3 -->
+                    <div class="case-card tilt-element reveal-on-scroll">
+                        <div class="case-header">
+                            <span class="case-cat">MANUFACTURING INDUSTRY</span>
+                            <span class="case-year">2026</span>
+                        </div>
+                        <h3 class="case-title">Predictive Maintenance Getaran Motor Pabrik Baja</h3>
+                        <p class="case-desc">Pendeteksian anomali mekanikal dinamo motor industri berbasis edge
+                            computing FFT (Fast Fourier Transform), mendeteksi keausan bearing 3 minggu sebelum
+                            kerusakan fatal.</p>
+                        <div class="case-stat-row">
+                            <div class="stat-cell">
+                                <span class="sc-num">&gt; Rp 300 Jt</span>
+                                <span class="sc-lbl">Biaya Mesin Terselamatkan</span>
+                            </div>
+                            <div class="stat-cell">
+                                <span class="sc-num">3 Minggu</span>
+                                <span class="sc-lbl">Peringatan Awal</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: TRANSPARENT PACKAGES & CONSULTATION -->
+        <section class="section-padding pricing-section" id="paket">
+            <div class="content-wrapper">
+                <div class="section-header-center reveal-on-scroll">
+                    <span class="section-tag">INVESTASI &amp; SKEMA</span>
+                    <h2 class="section-title">Paket Konsultasi &amp; Pengerjaan Proyek</h2>
+                    <p class="section-subtitle">Pilih tahapan kemitraan yang paling tepat untuk skala kebutuhan riset
+                        atau implementasi bisnis Anda.</p>
+                </div>
+
+                <div class="pricing-grid">
+
+                    <!-- Tier 1: PoC Prototype -->
+                    <div class="price-box-card tilt-element reveal-on-scroll">
+                        <div class="card-head">
+                            <span class="tier-label">FASE 1</span>
+                            <h3 class="tier-title">IoT Proof of Concept (PoC)</h3>
+                            <p class="tier-intro">Validasi ide proyek Anda dalam bentuk prototipe fungsional siap
+                                demonstrasi kepada stakeholder.</p>
+                            <div class="price-val">
+                                <span class="cur">Rp</span>
+                                <span class="num">2.500.000</span>
+                                <span class="sub">/ modul awal</span>
+                            </div>
+                        </div>
+                        <ul class="tier-features">
+                            <li><span class="chk">✓</span> Skema Rangkaian Hardware &amp; Breadboard Kit</li>
+                            <li><span class="chk">✓</span> Firmware Dasar Sensor &amp; Konektivitas Wi-Fi/GSM</li>
+                            <li><span class="chk">✓</span> Dashboard Monitoring Web Sederhana</li>
+                            <li><span class="chk">✓</span> Konsultasi Teknis &amp; Review Arsitektur 2 Sesi</li>
+                            <li><span class="chk">✓</span> Estimasi Pengerjaan: 7-10 Hari Kerja</li>
+                        </ul>
+                        <div class="tier-action">
+                            <a href="https://wa.me/62?text=Halo%20NEXA%20IOT,%20saya%20tertarik%20paket%20IoT%20PoC"
+                                target="_blank" class="cta-pill-neon outline w-full">Mulai Paket PoC</a>
+                        </div>
+                    </div>
+
+                    <!-- Tier 2: Custom Ready-to-Produce (Featured) -->
+                    <div class="price-box-card featured tilt-element reveal-on-scroll">
+                        <div class="glow-ribbon">PALING DIMINATI INDUSTRI</div>
+                        <div class="card-head">
+                            <span class="tier-label text-neon">FASE 2</span>
+                            <h3 class="tier-title">Custom Hardware &amp; PCB Ready</h3>
+                            <p class="tier-intro">Perancangan perangkat keras matang siap cetak massal lengkap dengan
+                                sertifikasi standar kelistrikan.</p>
+                            <div class="price-val">
+                                <span class="cur">Rp</span>
+                                <span class="num">5.000.000</span>
+                                <span class="sub">/ proyek lengkap</span>
+                            </div>
+                        </div>
+                        <ul class="tier-features">
+                            <li><span class="chk">✓</span> Desain Skematik &amp; Layout PCB Multi-layer (KiCad/Altium)
+                            </li>
+                            <li><span class="chk">✓</span> 3 Unit Prototipe Fisik PCB Fabrikasi SMT Siap Pakai</li>
+                            <li><span class="chk">✓</span> Desain Casing 3D Enclosure CAD (STL/STEP)</li>
+                            <li><span class="chk">✓</span> Firmware Bebas Bug dengan Watchdog &amp; Proteksi Daya</li>
+                            <li><span class="chk">✓</span> Integrasi Protokol MQTT Cloud &amp; Database Real-time</li>
+                            <li><span class="chk">✓</span> Estimasi: 2-3 Minggu Termasuk Cetak PCB</li>
+                        </ul>
+                        <div class="tier-action">
+                            <a href="https://wa.me/6281234567890?text=Halo%20NEXA%20IOT,%20saya%20tertarik%20paket%20Custom%20Hardware"
+                                target="_blank" class="cta-pill-neon w-full magnetic-element">Pilih Paket Hardware</a>
+                        </div>
+                    </div>
+
+                    <!-- Tier 3: Enterprise Turnkey -->
+                    <div class="price-box-card tilt-element reveal-on-scroll">
+                        <div class="card-head">
+                            <span class="tier-label">FASE 3</span>
+                            <h3 class="tier-title">Enterprise Turnkey System</h3>
+                            <p class="tier-intro">Sistem IoT end-to-end menyeluruh mencakup puluhan titik node sensor,
+                                instalasi on-site, dan server cloud mandiri.</p>
+                            <div class="price-val">
+                                <span class="cur">Mulai</span>
+                                <span class="num">15.500.000</span>
+                                <span class="sub">/ implementasi</span>
+                            </div>
+                        </div>
+                        <ul class="tier-features">
+                            <li><span class="chk">✓</span> Fabrikasi Hardware Node Jumlah Sedang/Besar</li>
+                            <li><span class="chk">✓</span> Penempatan Server Cloud IoT Terisolasi (On-Premises / AWS)
+                            </li>
+                            <li><span class="chk">✓</span> Dashboard Kustom Web &amp; Mobile Responsive</li>
+                            <li><span class="chk">✓</span> Pendampingan Instalasi Lapangan &amp; Kalibrasi</li>
+                            <li><span class="chk">✓</span> Garansi Hardware &amp; SLA Pemeliharaan 6 Bulan</li>
+                        </ul>
+                        <div class="tier-action">
+                            <a href="https://wa.me/6281234567890?text=Halo%20NEXA%20IOT,%20saya%20ingin%20jadwalkan%20diskusi%20Enterprise"
+                                target="_blank" class="cta-pill-neon outline w-full">Hubungi Tim Ahli</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 7: FINAL CALL TO ACTION -->
+        <section class="section-padding final-cta-section" id="kontak">
+            <div class="ambient-cyber-center"></div>
+
+            <div class="content-wrapper cta-inner-wrap reveal-on-scroll">
+                <div class="status-pill">
+                    <span class="pulse-beacon"></span>
+                    <span>SLOT KONSULTASI PROYEK TERSEDIA MINGGU INI</span>
+                </div>
+
+                <h2 class="final-headline">Punya Ide Proyek IoT yang Ingin Segera Direalisasikan?</h2>
+                <p class="final-desc">
+                    Konsultasikan skema hardware, kendala sensor, atau rencana sistem telemetri Anda langsung dengan
+                    Lead Embedded Engineer kami. Diskusi bebas biaya tanpa komitmen.
+                </p>
+
+                <div class="cta-btn-group">
+                    <a href="https://wa.me/6281234567890?text=Halo%20NEXA%20IOT,%20saya%20ingin%20konsultasi%20langsung%20mengenai%20proyek%20hardware"
+                        target="_blank" class="cta-pill-neon large magnetic-element">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.81 13.47 3.81 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.27 7.33C9.09 7.33 8.79 7.4 8.54 7.67C8.28 7.95 7.55 8.63 7.55 10.03C7.55 11.42 8.57 12.77 8.71 12.96C8.86 13.14 10.7 15.96 13.52 17.18C14.19 17.47 14.71 17.65 15.12 17.78C15.83 18.01 16.48 17.97 16.99 17.9C17.56 17.81 18.75 17.18 19 16.48C19.25 15.77 19.25 15.17 19.18 15.05C19.1 14.92 18.92 14.85 18.64 14.71C18.37 14.57 17.02 13.9 16.77 13.81C16.51 13.72 16.33 13.67 16.15 13.95C15.97 14.22 15.44 14.85 15.28 15.05C15.12 15.24 14.96 15.26 14.69 15.12C14.41 14.99 13.52 14.7 12.46 13.75C11.64 13.01 11.08 12.1 10.92 11.83C10.77 11.55 10.9 11.4 11.04 11.27C11.17 11.14 11.33 10.93 11.47 10.77C11.61 10.6 11.66 10.48 11.75 10.3C11.84 10.11 11.79 9.95 11.72 9.82C11.66 9.68 11.13 8.38 10.9 7.85C10.68 7.33 10.46 7.4 10.3 7.39L9.79 7.33H9.27Z" />
+                        </svg>
+                        <span>Hubungi via WhatsApp</span>
+                    </a>
+                    <a href="mailto:contact@nexaiot.id" class="cta-pill-neon outline">
+                        <span>Kirim Spesifikasi Proyek via Email</span>
+                    </a>
+                </div>
+
+                <div class="service-guarantee">
+                    <span>Rata-rata respons WhatsApp teknis dalam 10-20 menit di jam kerja.</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-wrap">
+        <div class="content-wrapper">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="brand-logo footer-logo">
+                        <svg class="logo-svg" width="24" height="24" viewBox="0 0 40 40" fill="none">
+                            <path d="M20 7L31 13.5V26.5L20 33L9 26.5V13.5L20 7Z" stroke="#00FF87" stroke-width="2.5" />
+                            <circle cx="20" cy="20" r="4" fill="#00FF87" />
+                        </svg>
+                        <span class="logo-name">NEXA</span><span class="logo-badge">IOT</span>
+                    </div>
+                    <p class="footer-desc">
+                        Studio rekayasa hardware IoT, perancangan skematik PCB, dan platform telemetri awan presisi
+                        tinggi berpusat di Indonesia.
+                    </p>
+                    <div class="server-heartbeat">
+                        <span class="heartbeat-dot"></span>
+                        <span class="heartbeat-text">CLOUD BROKER: ASIA-SOUTHEAST-1 (ONLINE)</span>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <span class="col-head">Navigasi</span>
+                    <ul>
+                        <li><a href="#produk">Produk IoT</a></li>
+                        <li><a href="#layanan">Layanan Engineering</a></li>
+                        <li><a href="#simulator">Live Telemetri</a></li>
+                        <li><a href="#portofolio">Studi Kasus</a></li>
+                        <li><a href="#paket">Investasi Biaya</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <span class="col-head">Spesialisasi</span>
+                    <ul>
+                        <li><span class="static-txt">Desain PCB KiCad &amp; Altium</span></li>
+                        <li><span class="static-txt">ESP32 &amp; STM32 Firmware</span></li>
+                        <li><span class="static-txt">Protokol LoRaWAN 915/923 MHz</span></li>
+                        <li><span class="static-txt">Industrial RS485 Modbus</span></li>
+                        <li><span class="static-txt">Dashboard MQTT &amp; InfluxDB</span></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <span class="col-head">Hubungi Kami</span>
+                    <ul>
+                        <li><a href="https://wa.me/62" target="_blank">WhatsApp Direct</a></li>
+                        <li><a href="mailto:contact@nexaiot.id">contact@nexaiot.id</a></li>
+                        <li><a href="https://github.com" target="_blank">GitHub Hardware Repo</a></li>
+                        <li><a href="https://linkedin.com" target="_blank">LinkedIn Engineering</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 NEXA IOT (nexaiot.id). Seluruh hak cipta dilindungi undang-undang.</p>
+                <p class="foot-note">Handcrafted Precision Engineering &bull; Anti-AI Slop &bull; Pure Native Web</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
